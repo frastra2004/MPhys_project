@@ -22,8 +22,8 @@ def update_with_noise():
     global x, running
     while running:
         with lock:
-            noise = 0  # np.random.normal(loc=0, scale=0.5)
-            x.append(noise)
+            noise = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  # np.random.normal(loc=0, scale=0.5)
+            x.extend(noise)
         time.sleep(0.05)
 
 #==============================================================================
